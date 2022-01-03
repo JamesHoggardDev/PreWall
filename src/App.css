@@ -18,3 +18,16 @@ main > :first-child {
 main > :last-child {
   margin-bottom: 0;
 }
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}

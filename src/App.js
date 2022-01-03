@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import About from './About';
+import About from './components/About';
 import { Outlet, Link } from "react-router-dom";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
           paddingBottom: "1rem"
         }}
       >
-        <Link to="/invoices">Bills</Link> |{" "}
+        <Link to="/invoices">Bills to be Processed</Link> |{" "}
         <Link to="/expenses">True Expenses</Link>
       </nav>
       <Outlet />
