@@ -2,7 +2,7 @@ import {
   NavLink,
   Outlet,
   useSearchParams,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 import { getInvoices } from "../data";
 

@@ -12,6 +12,7 @@ export default function Invoice() {
         {invoice.number}: {invoice.name}
       </p>
       <p>Will Process: {invoice.due}</p>
+      <p style={{ backgroundColor: "lightyellow"}}>Have something similar: {invoice.already_have}</p>
       <p>
         <button
           onClick={() => {
