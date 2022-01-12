@@ -1,46 +1,46 @@
 let invoices = [
   {
-    name: "T-Shirt",
+    name: 'T-Shirt',
     number: 33,
-    already_have: "Yes",
-    amount: "$10",
-    due: "12/05/2021"
+    already_have: 'Yes',
+    amount: '$10',
+    due: '12/05/2021',
   },
   {
-    name: "Popcorn",
+    name: 'Popcorn',
     number: 34,
-    already_have: "Yes",
-    amount: "$23",
-    due: "10/31/2021"
+    already_have: 'Yes',
+    amount: '$23',
+    due: '10/31/2021',
   },
   {
-    name: "Away ticket",
+    name: 'Away ticket',
     number: 35,
-    already_have: "No",
-    amount: "$93",
-    due: "07/22/2022"
+    already_have: 'No',
+    amount: '$93',
+    due: '07/22/2022',
   },
   {
-    name: "Concert merchandise",
+    name: 'Concert merchandise',
     number: 36,
-    already_have: "downstairs somewhere",
-    amount: "$142",
-    due: "09/01/2022"
+    already_have: 'downstairs somewhere',
+    amount: '$142',
+    due: '09/01/2022',
   },
   {
-    name: "League entry",
+    name: 'League entry',
     number: 14,
-    already_have: "No",
-    amount: "$65",
-    due: "01/27/2023"
+    already_have: 'No',
+    amount: '$65',
+    due: '01/27/2023',
   },
   {
-    name: "Concert ticket",
+    name: 'Concert ticket',
     number: 25,
-    already_have: "Yes",
-    amount: "$302",
-    due: "09/01/2022"
-  }
+    already_have: 'Yes',
+    amount: '$302',
+    due: '09/01/2022',
+  },
 ];
 
 // ...
@@ -51,12 +51,12 @@ export function getInvoices() {
 
 export function getInvoice(number) {
   return invoices.find(
-    invoice => invoice.number === number
+    (invoice) => invoice.number === number,
   );
 }
 
 export function deleteInvoice(number) {
   invoices = invoices.filter(
-    invoice => invoice.number !== number
+    (invoice) => invoice.number !== number,
   );
 }
