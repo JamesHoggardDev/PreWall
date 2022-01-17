@@ -3,12 +3,7 @@ import './App.css';
 import { Outlet, Link } from 'react-router-dom';
 
 function App() {
-  const handleChange = (event) => {
-    console.log(event.target.value);
-  };
-
   return (
-
     <div>
       <h1 style={{ color: 'blue' }}>PreWall</h1>
       <nav
@@ -24,14 +19,7 @@ function App() {
         <Link to="/expenses">True Expenses</Link>
       </nav>
       <Outlet />
-      <div>
-        <h2>my </h2>
-
-        <label htmlFor="search">Search: </label>
-        <input id="search" type="text" onChange={handleChange} />
-      </div>
     </div>
   );
 }
-
 export default App;
