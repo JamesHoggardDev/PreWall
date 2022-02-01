@@ -3,8 +3,8 @@ import {
   Outlet,
   useSearchParams,
   useLocation,
-} from "react-router-dom";
-import { getInvoices } from "../data";
+} from 'react-router-dom';
+import { getInvoices } from '../data';
 
 function QueryNavLink({ to, ...props }) {
   let location = useLocation();
@@ -52,6 +52,7 @@ export default function Invoices() {
               key={invoice.number}
             >
               {invoice.name}
+              <button></button>
             </QueryNavLink>
           ))}
       </nav>
