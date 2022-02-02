@@ -16,11 +16,6 @@ export default function Invoices() {
   let invoices = getInvoices();
   let [searchParams, setSearchParams] = useSearchParams();
 
-  // function handleAdd(){
-  //   const updateInvoiceArr = [...invoices, newInvoice];
-
-  // }
-
   return (
     <div style={{ display: "flex" }}>
       <nav
