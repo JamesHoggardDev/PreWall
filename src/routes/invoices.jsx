@@ -11,9 +11,15 @@ function QueryNavLink({ to, ...props }) {
   return <NavLink to={to + location.search} {...props} />;
 }
 
+
 export default function Invoices() {
   let invoices = getInvoices();
   let [searchParams, setSearchParams] = useSearchParams();
+
+  // function handleAdd(){
+  //   const updateInvoiceArr = [...invoices, newInvoice];
+
+  // }
 
   return (
     <div style={{ display: "flex" }}>
@@ -52,7 +58,6 @@ export default function Invoices() {
               key={invoice.number}
             >
               {invoice.name}
-              <button></button>
             </QueryNavLink>
           ))}
       </nav>
