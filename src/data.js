@@ -60,3 +60,7 @@ export function deleteInvoice(number) {
     (invoice) => invoice.number !== number,
   );
 }
+
+export function addThree(){
+  
+}

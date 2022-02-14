@@ -11,7 +11,6 @@ function QueryNavLink({ to, ...props }) {
   return <NavLink to={to + location.search} {...props} />;
 }
 
-
 export default function Invoices() {
   let invoices = getInvoices();
   let [searchParams, setSearchParams] = useSearchParams();
