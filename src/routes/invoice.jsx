@@ -19,6 +19,7 @@ export default function Invoice() {
       <span></span>
       <p>
         <button
+          className="delete-button"
           onClick={() => {
             deleteInvoice(invoice.number);
             navigate("/invoices");

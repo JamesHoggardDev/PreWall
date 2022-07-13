@@ -4,6 +4,7 @@ import {
   useSearchParams,
   useLocation,
 } from 'react-router-dom';
+import Table from '../Components/Table';
 import { getInvoices } from '../data';
 
 function QueryNavLink({ to, ...props }) {
@@ -55,6 +56,7 @@ export default function Invoices() {
             </QueryNavLink>
           ))}
       </nav>
+      
       <Outlet />
     </div>
   );

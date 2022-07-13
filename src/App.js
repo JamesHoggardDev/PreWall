@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import { Outlet, Link } from 'react-router-dom';
+import Table from './Components/Table';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Link to="/expenses">True Expenses</Link>
       </nav>
       <Outlet />
+      <Table />
     </div>
   );
 }

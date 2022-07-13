@@ -26,10 +26,23 @@ main > :last-child {
   to {background-color: yellow;}
 }
 
-button {
+button.delete-button {
   width: 100px;
   height: 40px;
   background-color: red;
   animation-name: example;
   animation-duration: 4s;
+}
+.sr-only {
+  padding: 20px;
+
+}
+
+div.sort-tool-header{
+  display: flex;
+  justify-content: center;
+  border: 1px solid gold;
+}
+
+.sort-tool-h1{
 }
